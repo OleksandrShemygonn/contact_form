@@ -1,11 +1,11 @@
 body{  
- background=image: url("../img/bg.png"); 
+    background-image: url("fox.jpg");
 }
 a{
  color: #fff; 
 }
 a:hover{  
- text=decoration: none;
+ text-decoration: none;
 }
 .container{  
  width: 450px; 

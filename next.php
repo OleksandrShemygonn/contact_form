@@ -2,12 +2,14 @@
 
 require("Add.php");
 
-$firstName = $_POST['email'];
-$secondName = $_POST['name'];
-$thirdName = $_POST['phone'];
-$fourthName = $_POST['message'];
+$firstName = $_GET['email'];
+$secondName = $_GET['name'];
+$thirdName = $_GET['phone'];
+$fourthName = $_GET['message'];
 
-$sql = "INSERT INTO contact forms (email, name, phone, masseg) VALUES ('','$firstName','$secondName', '$thirdName', '$fourthName');";
+
+
+$sql = "INSERT INTO contact forms (email, name, phone, masseg) VALUES ('$firstName','$secondName', '$thirdName', '$fourthName')";
 $sql2 = "SELECT email, name, phone, massege";
 
 $result = $conn->query($sql);
